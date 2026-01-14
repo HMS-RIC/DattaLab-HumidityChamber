@@ -8876,6 +8876,12 @@
 		(uuid "0420fbb2-1710-4bf8-a3d1-b00c86a69ea5")
 	)
 	(junction
+		(at 73.66 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ae80d33-dcec-4cdf-88c7-9274a46811d6")
+	)
+	(junction
 		(at 160.02 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8886,12 +8892,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a01bf60-48e1-4856-b8f4-480cbefb4297")
-	)
-	(junction
-		(at 73.66 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "46f71bf5-2d7e-4278-8092-4600f87a8b6a")
 	)
 	(junction
 		(at 119.38 137.16)
@@ -8910,6 +8910,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8726a909-48bf-4704-b1b6-99bc94d286c3")
+	)
+	(junction
+		(at 83.82 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "968cc13c-ab3f-443f-9286-90f13d4a393e")
 	)
 	(junction
 		(at 132.08 137.16)
@@ -9605,6 +9611,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 63.5) (xy 83.82 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "915aeb6d-ac6c-4abe-b050-744cbc01d3e6")
+	)
+	(wire
+		(pts
 			(xy 73.66 91.44) (xy 73.66 88.9)
 		)
 		(stroke
@@ -9795,6 +9811,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 63.5) (xy 93.98 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bab29273-6d90-4dea-95f3-f8bfcebcd99b")
+	)
+	(wire
+		(pts
 			(xy 195.58 157.48) (xy 203.2 157.48)
 		)
 		(stroke
@@ -9945,16 +9971,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 91.44) (xy 73.66 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed630a96-e903-40e1-b236-ff60014959e7")
-	)
-	(wire
-		(pts
 			(xy 30.48 154.94) (xy 48.26 154.94)
 		)
 		(stroke
@@ -9992,16 +10008,6 @@
 			(type default)
 		)
 		(uuid "f5d2459e-7a39-4a9b-9c9f-eec2501a753c")
-	)
-	(wire
-		(pts
-			(xy 93.98 63.5) (xy 86.36 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5f6fee6-722a-40a1-9e8b-3171b9b11c66")
 	)
 	(wire
 		(pts
@@ -11072,71 +11078,6 @@
 			(project ""
 				(path "/d7d8f86e-c8d6-438e-95be-a4e29dfe527f"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 78.74 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1dff0a99-2c24-4e35-a4fb-45a07bb93a99")
-		(property "Reference" "#PWR07"
-			(at 78.74 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 78.74 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 78.74 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8aca514c-26ed-45d9-9b9b-792be6ff5e1c")
-		)
-		(instances
-			(project "HMS Olfactometer"
-				(path "/d7d8f86e-c8d6-438e-95be-a4e29dfe527f"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -13425,7 +13366,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 63.5 0)
+		(at 73.66 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13434,7 +13375,7 @@
 		(fields_autoplaced yes)
 		(uuid "e60aaa04-97df-45f3-9ff5-d34aba4e56fd")
 		(property "Reference" "#PWR06"
-			(at 73.66 69.85 0)
+			(at 73.66 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13443,7 +13384,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 68.58 0)
+			(at 73.66 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13452,7 +13393,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 63.5 0)
+			(at 73.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13461,7 +13402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 63.5 0)
+			(at 73.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13470,7 +13411,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 63.5 0)
+			(at 73.66 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13482,7 +13423,7 @@
 			(uuid "e25d5492-8c7d-455e-8714-65fc0839278c")
 		)
 		(instances
-			(project "HMS Olfactometer"
+			(project "Datta Lab Humidity Chamber PCB"
 				(path "/d7d8f86e-c8d6-438e-95be-a4e29dfe527f"
 					(reference "#PWR06")
 					(unit 1)
@@ -13693,7 +13634,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 86.36 63.5 0)
+		(at 83.82 63.5 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13702,7 +13643,7 @@
 		(dnp no)
 		(uuid "fd1fcfe4-c994-4088-b91d-3793aaf6be8c")
 		(property "Reference" "#PWR08"
-			(at 86.36 67.31 0)
+			(at 83.82 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13711,7 +13652,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 86.36 58.42 0)
+			(at 83.82 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13719,7 +13660,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 63.5 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13728,7 +13669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 63.5 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13737,7 +13678,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 86.36 63.5 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
