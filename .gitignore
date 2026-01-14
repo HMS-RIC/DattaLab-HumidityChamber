@@ -8,6 +8,9 @@
 # board2pdf settings
 board2pdf.config.ini
 
+# lock files
+*.lck
+
 # Temporary files
 *.000
 *.bak
