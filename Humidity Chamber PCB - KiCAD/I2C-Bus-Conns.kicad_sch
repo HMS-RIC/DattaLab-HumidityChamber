@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Datta Lab Humidity Chamber Controller")
-		(date "2026-01-07")
-		(rev "1.0")
+		(date "2026-01-26")
+		(rev "1.1")
 		(company "HMS Research Instrumentation Core")
 	)
 	(lib_symbols
@@ -1326,16 +1326,6 @@
 			(type default)
 		)
 		(uuid "a5602ce8-c7dc-41fa-ba6e-a2d616f9e518")
-	)
-	(wire
-		(pts
-			(xy 114.3 48.26) (xy 114.3 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a993a40b-a67e-4ff2-b037-b276dde076c7")
 	)
 	(wire
 		(pts
@@ -3526,6 +3516,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 114.3 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a16d5fbc-5b11-4bf1-9bd7-e31b8422b804")
+		(property "Reference" "R14"
+			(at 116.84 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.6k"
+			(at 116.84 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 112.522 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49dd3502-1bc7-44d2-9b6c-4be24e125d81")
+		)
+		(pin "2"
+			(uuid "6f199b64-083f-494a-b323-87e07da07105")
+		)
+		(instances
+			(project "Datta Lab Humidity Chamber PCB"
+				(path "/d7d8f86e-c8d6-438e-95be-a4e29dfe527f/29aff04f-5256-4a71-9320-1940ab24e10e"
+					(reference "R14")
+					(unit 1)
+				)
+				(path "/d7d8f86e-c8d6-438e-95be-a4e29dfe527f/424aee9d-cce1-4aae-b0be-0f762712ebda"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 137.16 45.72 0)
 		(mirror x)
@@ -3785,7 +3849,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "560"
+		(property "Value" "12k"
 			(at 116.84 76.1999 0)
 			(effects
 				(font

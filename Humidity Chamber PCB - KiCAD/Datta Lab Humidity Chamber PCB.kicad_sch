@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Datta Lab Humidity Chamber Controller")
-		(date "2026-01-07")
-		(rev "1.0")
+		(date "2026-01-26")
+		(rev "1.1")
 		(company "HMS Research Instrumentation Core")
 	)
 	(lib_symbols
